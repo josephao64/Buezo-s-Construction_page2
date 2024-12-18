@@ -29,8 +29,6 @@ body {
 }
 
 .heading_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -45,7 +43,6 @@ body {
   height: 30px;
   top: 14%;
   right: -15px;
-  background: -webkit-gradient(linear, left top, right top, from(#fb930a), to(#f5e47b));
   background: linear-gradient(to right, #fb930a, #f5e47b);
 }
 
@@ -97,8 +94,7 @@ a:focus {
 .btn,
 .btn:focus {
   outline: none !important;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -113,12 +109,8 @@ a:focus {
 }
 
 .navbar-brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .navbar-brand img {
@@ -148,12 +140,8 @@ a:focus {
 }
 
 .quote_btn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .quote_btn-container a {
@@ -165,8 +153,7 @@ a:focus {
   position: absolute;
   top: 68%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: #ffffff;
   font-size: 12px;
 }
@@ -181,26 +168,19 @@ a:focus {
 /* Slider Section */
 .slider_section {
   height: calc(100% - 70px);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
 }
 
 .slider_section .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .slider_section .design-box {
   position: absolute;
   bottom: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   width: 75px;
 }
@@ -212,11 +192,10 @@ a:focus {
 .slider_section .slider_number-container {
   position: absolute;
   top: 45%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 4%;
   text-align: center;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .slider_section .slider_number-container hr {
@@ -227,31 +206,18 @@ a:focus {
 }
 
 .slider_section .slider_number-container .number-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .slider_section .detail_box h2 {
   margin-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .slider_section .detail_box h2 span {
@@ -317,42 +283,25 @@ a:focus {
 }
 
 .item_section .item_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .item_section .item_container .box {
   width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 30px 10px;
   padding: 15px;
-  -webkit-box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.15);
 }
 
 .item_section .item_container .box .img-box {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .item_section .item_container .box .img-box img {
@@ -369,13 +318,14 @@ a:focus {
 }
 
 .item_section .item_container .box:hover {
-  -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
 }
 
-/* Modal Flechas de Navegación Personalizadas para Slider */
+/* Flechas de Navegación Actualizadas con Íconos Negras */
 .slider_section .carousel-control-prev,
-.slider_section .carousel-control-next {
+.slider_section .carousel-control-next,
+.testimonials_section .carousel-control-prev,
+.testimonials_section .carousel-control-next {
   top: 50%;
   transform: translateY(-50%);
   width: 50px;
@@ -386,64 +336,63 @@ a:focus {
 }
 
 .slider_section .carousel-control-prev:hover,
-.slider_section .carousel-control-next:hover {
+.slider_section .carousel-control-next:hover,
+.testimonials_section .carousel-control-prev:hover,
+.testimonials_section .carousel-control-next:hover {
   background: rgba(255, 255, 255, 0.8); /* Fondo más opaco al pasar el ratón */
 }
 
 .slider_section .carousel-control-prev-icon,
-.slider_section .carousel-control-next-icon {
+.slider_section .carousel-control-next-icon,
+.testimonials_section .carousel-control-prev-icon,
+.testimonials_section .carousel-control-next-icon {
   background-size: 25px; /* Tamaño de las flechas */
   width: 25px;
   height: 25px;
   background-image: none; /* Elimina la imagen predeterminada */
 }
 
-.slider_section .carousel-control-prev-icon::before,
-.slider_section .carousel-control-next-icon::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: #ffffff; /* Color blanco por defecto */
-  font-size: 24px;
-  content: "\f053"; /* Icono de flecha izquierda */
-}
-
-.slider_section .carousel-control-next-icon::before {
-  content: "\f054"; /* Icono de flecha derecha */
-}
-
-/* Cambiar el color de las flechas según tus necesidades */
-.slider_section .carousel-control-prev-icon::before,
-.slider_section .carousel-control-next-icon::before {
-  color: #ffffff; /* Cambia #ffffff por el color deseado, por ejemplo, #fbb534 para amarillo */
+.slider_section .carousel-control-prev-icon i,
+.slider_section .carousel-control-next-icon i,
+.testimonials_section .carousel-control-prev-icon i,
+.testimonials_section .carousel-control-next-icon i {
+  font-size: 24px; /* Tamaño del ícono */
+  color: #000000; /* Color negro */
 }
 
 /* Posicionar las flechas fuera del contenido */
-.slider_section .carousel-control-prev {
+.slider_section .carousel-control-prev,
+.testimonials_section .carousel-control-prev {
   left: -40px;
 }
 
-.slider_section .carousel-control-next {
+.slider_section .carousel-control-next,
+.testimonials_section .carousel-control-next {
   right: -40px;
 }
 
 /* Ajustes responsivos para las flechas */
 @media (max-width: 768px) {
   .slider_section .carousel-control-prev,
-  .slider_section .carousel-control-next {
+  .slider_section .carousel-control-next,
+  .testimonials_section .carousel-control-prev,
+  .testimonials_section .carousel-control-next {
     width: 40px;
     height: 40px;
   }
 
-  .slider_section .carousel-control-prev-icon::before,
-  .slider_section .carousel-control-next-icon::before {
+  .slider_section .carousel-control-prev-icon i,
+  .slider_section .carousel-control-next-icon i,
+  .testimonials_section .carousel-control-prev-icon i,
+  .testimonials_section .carousel-control-next-icon i {
     font-size: 20px;
   }
 
-  .slider_section .carousel-control-prev {
+  .slider_section .carousel-control-prev,
+  .slider_section .carousel-control-next,
+  .testimonials_section .carousel-control-prev,
+  .testimonials_section .carousel-control-next {
     left: -30px;
-  }
-
-  .slider_section .carousel-control-next {
     right: -30px;
   }
 }
@@ -456,8 +405,7 @@ a:focus {
 .about_section .design-box {
   position: absolute;
   bottom: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 0;
   width: 75px;
 }
@@ -467,9 +415,7 @@ a:focus {
 }
 
 .about_section .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .about_section .detail-box p {
@@ -509,241 +455,25 @@ a:focus {
   /* Añade estilos específicos si es necesario */
 }
 
-.testimonials_section .carousel-control-prev,
-.testimonials_section .carousel-control-next {
-  /* Reutiliza los estilos del slider_section si es necesario */
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
-  border-radius: 50%;
-  z-index: 2; /* Asegura que estén por encima del contenido */
+/* Asegurar que solo un carousel-item sea visible en Testimonios */
+.testimonials_section .carousel-inner .carousel-item {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.testimonials_section .carousel-control-prev:hover,
-.testimonials_section .carousel-control-next:hover {
-  background: rgba(255, 255, 255, 0.8); /* Fondo más opaco al pasar el ratón */
+.testimonials_section .carousel-inner .carousel-item.active {
+  display: block;
+  opacity: 1;
 }
 
-.testimonials_section .carousel-control-prev-icon,
-.testimonials_section .carousel-control-next-icon {
-  background-size: 25px; /* Tamaño de las flechas */
-  width: 25px;
-  height: 25px;
-  background-image: none; /* Elimina la imagen predeterminada */
-}
-
-.testimonials_section .carousel-control-prev-icon::before,
-.testimonials_section .carousel-control-next-icon::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: #ffffff; /* Color blanco por defecto */
-  font-size: 24px;
-  content: "\f053"; /* Icono de flecha izquierda */
-}
-
-.testimonials_section .carousel-control-next-icon::before {
-  content: "\f054"; /* Icono de flecha derecha */
-}
-
-/* Cambiar el color de las flechas según tus necesidades */
-.testimonials_section .carousel-control-prev-icon::before,
-.testimonials_section .carousel-control-next-icon::before {
-  color: #ffffff; /* Cambia #ffffff por el color deseado */
-}
-
-/* Posicionar las flechas fuera del contenido */
-.testimonials_section .carousel-control-prev {
-  left: -40px;
-}
-
-.testimonials_section .carousel-control-next {
-  right: -40px;
-}
-
-/* Ajustes responsivos para las flechas en Testimonios */
-@media (max-width: 768px) {
-  .testimonials_section .carousel-control-prev,
-  .testimonials_section .carousel-control-next {
-    width: 40px;
-    height: 40px;
-  }
-
-  .testimonials_section .carousel-control-prev-icon::before,
-  .testimonials_section .carousel-control-next-icon::before {
-    font-size: 20px;
-  }
-
-  .testimonials_section .carousel-control-prev {
-    left: -30px;
-  }
-
-  .testimonials_section .carousel-control-next {
-    right: -30px;
-  }
-}
-
-/* Price Section */
-.price_section {
-  background-color: #f8f8f8;
-}
-
-.price_section .price_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 40px 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.price_section .price_container .box {
-  min-width: 300px;
-  max-width: 360px;
-  height: 550px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 35px 10px;
-  padding: 45px 0 25px 0;
-  text-align: center;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.05);
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.price_section .price_container .box .img-box {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.price_section .price_container .box .img-box img {
-  width: 150px;
-}
-
-.price_section .price_container .box h6 {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.price_section .price_container .box .detail-box h5 {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.price_section .price_container .box .detail-box h5 span {
-  color: #fbb534;
-}
-
-.price_section .price_container .box .detail-box a {
-  display: inline-block;
-  padding: 5px 15px;
-  border: 1px solid #000000;
-  font-weight: bold;
-  color: #000000;
-  margin-top: 15px;
-}
-
-.price_section .price_container .box:hover a {
-  border-color: #fbb534;
-  color: #fbb534;
-}
-
-.price_section .price_btn {
-  display: inline-block;
-  padding: 8px 40px;
-  background-color: #0d0806;
-  border: 1px solid #0d0806;
-  color: #ffffff;
-  border-radius: 0;
-}
-
-.price_section .price_btn:hover {
-  background-color: transparent;
-  color: #0d0806;
-}
-
-/* Ring Section */
-.ring_section {
-  text-align: center;
-  position: relative;
-}
-
-.ring_section .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ring_section .container {
-  -webkit-box-shadow: 0px 0px 56px 1px rgba(0, 0, 0, 0.08);
-  box-shadow: 0px 0px 56px 1px rgba(0, 0, 0, 0.08);
-}
-
-.ring_section .design-box {
-  position: absolute;
-  bottom: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 0;
-  width: 75px;
-}
-
-.ring_section .design-box img {
-  width: 100%;
-}
-
-.ring_section .ring_container .detail-box h4 {
-  text-transform: uppercase;
-  color: #fbb534;
-}
-
-.ring_section .ring_container .detail-box a {
-  display: inline-block;
-  padding: 5px 15px;
-  border: 1px solid #000000;
-  font-weight: bold;
-  color: #000000;
-  margin-top: 15px;
-}
-
-.ring_section .ring_container .img-box img {
-  width: 100%;
-}
-
-/* Testimonios Section */
-.testimonials_section .heading_container h2 {
-  /* Añade estilos específicos si es necesario */
+.testimonials_section .client_container {
+  /* Estilos específicos si es necesario */
 }
 
 /* Client Section */
 .client_section .heading_container {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .client_section .secondary_heading {
@@ -751,12 +481,8 @@ a:focus {
 }
 
 .client_section .client_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border: 1px solid #fbb534;
   padding: 25px;
   width: 85%;
@@ -764,12 +490,8 @@ a:focus {
 }
 
 .client_section .client_container .client-id {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 45%;
 }
 
@@ -803,15 +525,11 @@ a:focus {
 }
 
 .client_section .carousel-control-prev {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .client_section .carousel-control-next {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .client_section .carousel-control-prev-icon,
@@ -845,8 +563,7 @@ a:focus {
 .contact_section .design-box {
   position: absolute;
   bottom: 50%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  transform: translateY(50%);
   right: 0;
   width: 75px;
 }
@@ -872,7 +589,6 @@ a:focus {
   background-color: transparent;
   outline: none;
   color: #101010;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16);
 }
 
@@ -902,7 +618,6 @@ a:focus {
   border: none;
   border-radius: 30px;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f5e47b), to(#fb930a));
   background: linear-gradient(to bottom, #f5e47b, #fb930a);
   margin-top: 35px;
 }
@@ -923,12 +638,8 @@ a:focus {
 }
 
 .info_section .info_container .info_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 100px 10px 45px 10px;
   background-color: #ffffff;
   width: 200px;
@@ -936,12 +647,8 @@ a:focus {
 }
 
 .info_section .info_container .info_logo a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .info_section .info_container .info_logo a img {
@@ -981,33 +688,20 @@ a:focus {
   position: absolute;
   bottom: -8px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border-radius: 5px;
   background-color: #f8bf46;
 }
 
 .info_section .info_form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info_section .info_form form .email_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .info_section .info_form form label {
@@ -1028,7 +722,6 @@ a:focus {
   border: none;
   border-radius: 30px;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f5e47b), to(#fb930a));
   background: linear-gradient(to bottom, #f5e47b, #fb930a);
   margin-top: 35px;
   text-transform: uppercase;
@@ -1036,26 +729,15 @@ a:focus {
 
 .info_section .info_social {
   padding-top: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info_section .info_social .social_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 15px auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .info_section .info_social .social_box img {
@@ -1066,12 +748,8 @@ a:focus {
 /* Footer Section */
 .footer_section {
   background-color: #363636;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   position: relative;
 }
 
@@ -1081,89 +759,42 @@ a:focus {
   margin: 0;
   text-align: center;
   padding: 20px 35px;
-  margin: 0;
 }
 
 .footer_section a {
   color: #9c9b9b;
 }
 
-/* Flechas de Navegación Personalizadas para el Slider */
-.slider_section .carousel-control-prev,
-.slider_section .carousel-control-next {
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
-  border-radius: 50%;
-  z-index: 2; /* Asegura que estén por encima del contenido */
+/* Modales */
+.modal-content img {
+  width: 100%;
 }
 
-.slider_section .carousel-control-prev:hover,
-.slider_section .carousel-control-next:hover {
-  background: rgba(255, 255, 255, 0.8); /* Fondo más opaco al pasar el ratón */
+.modal-content h5 {
+  margin-bottom: 20px;
 }
 
-.slider_section .carousel-control-prev-icon,
-.slider_section .carousel-control-next-icon {
-  background-size: 25px; /* Tamaño de las flechas */
-  width: 25px;
-  height: 25px;
-  background-image: none; /* Elimina la imagen predeterminada */
+.modal-content p {
+  margin-bottom: 20px;
 }
 
-.slider_section .carousel-control-prev-icon::before,
-.slider_section .carousel-control-next-icon::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: #ffffff; /* Color blanco por defecto */
-  font-size: 24px;
-  content: "\f053"; /* Icono de flecha izquierda */
+.modal-content h6 {
+  margin-bottom: 10px;
 }
 
-.slider_section .carousel-control-next-icon::before {
-  content: "\f054"; /* Icono de flecha derecha */
+/* Testimonios Section */
+/* Asegurar que solo un carousel-item sea visible en Testimonios */
+.testimonials_section .carousel-inner .carousel-item {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
-/* Cambiar el color de las flechas según tus necesidades */
-.slider_section .carousel-control-prev-icon::before,
-.slider_section .carousel-control-next-icon::before {
-  color: #ffffff; /* Cambia #ffffff por el color deseado, por ejemplo, #fbb534 para amarillo */
+.testimonials_section .carousel-inner .carousel-item.active {
+  display: block;
+  opacity: 1;
 }
 
-/* Posicionar las flechas fuera del contenido */
-.slider_section .carousel-control-prev {
-  left: -40px;
-}
-
-.slider_section .carousel-control-next {
-  right: -40px;
-}
-
-/* Ajustes responsivos para las flechas */
-@media (max-width: 768px) {
-  .slider_section .carousel-control-prev,
-  .slider_section .carousel-control-next {
-    width: 40px;
-    height: 40px;
-  }
-
-  .slider_section .carousel-control-prev-icon::before,
-  .slider_section .carousel-control-next-icon::before {
-    font-size: 20px;
-  }
-
-  .slider_section .carousel-control-prev {
-    left: -30px;
-  }
-
-  .slider_section .carousel-control-next {
-    right: -30px;
-  }
-}
-
-/* Flechas de Navegación Personalizadas para Testimonios */
 .testimonials_section .carousel-control-prev,
 .testimonials_section .carousel-control-next {
   top: 50%;
@@ -1188,23 +819,10 @@ a:focus {
   background-image: none; /* Elimina la imagen predeterminada */
 }
 
-.testimonials_section .carousel-control-prev-icon::before,
-.testimonials_section .carousel-control-next-icon::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: #ffffff; /* Color blanco por defecto */
-  font-size: 24px;
-  content: "\f053"; /* Icono de flecha izquierda */
-}
-
-.testimonials_section .carousel-control-next-icon::before {
-  content: "\f054"; /* Icono de flecha derecha */
-}
-
-/* Cambiar el color de las flechas según tus necesidades */
-.testimonials_section .carousel-control-prev-icon::before,
-.testimonials_section .carousel-control-next-icon::before {
-  color: #ffffff; /* Cambia #ffffff por el color deseado */
+.testimonials_section .carousel-control-prev-icon i,
+.testimonials_section .carousel-control-next-icon i {
+  font-size: 24px; /* Tamaño del ícono */
+  color: #000000; /* Color negro */
 }
 
 /* Posicionar las flechas fuera del contenido */
@@ -1216,7 +834,7 @@ a:focus {
   right: -40px;
 }
 
-/* Ajustes responsivos para las flechas en Testimonios */
+/* Ajustes responsivos para las flechas */
 @media (max-width: 768px) {
   .testimonials_section .carousel-control-prev,
   .testimonials_section .carousel-control-next {
@@ -1224,8 +842,8 @@ a:focus {
     height: 40px;
   }
 
-  .testimonials_section .carousel-control-prev-icon::before,
-  .testimonials_section .carousel-control-next-icon::before {
+  .testimonials_section .carousel-control-prev-icon i,
+  .testimonials_section .carousel-control-next-icon i {
     font-size: 20px;
   }
 
@@ -1238,8 +856,5 @@ a:focus {
   }
 }
 
-/* Otros estilos existentes continúan aquí... */
-
-/* Asegúrate de que este comentario esté al final del CSS existente */
-/* Estilos agregados para las flechas de navegación */
-
+/* AOS Animations (if any) */
+/* Puedes añadir más estilos aquí si es necesario */
