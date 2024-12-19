@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <!-- Basic -->
@@ -8,8 +8,8 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="Construcción, Gestión de Sitios, Protección Ambiental, Silt Fence, Orange Fence, Sand Bags, Limpieza de Calles, Lavado a Presión, Storm Covers, Wire Trash Bins" />
-  <meta name="description" content="Buezo's Construction ofrece servicios expertos en gestión de sitios y protección ambiental con más de 10 años de experiencia." />
+  <meta name="keywords" content="Construction, Site Management, Environmental Protection, Silt Fence, Orange Fence, Sand Bags, Street Cleaning, Pressure Washing, Storm Covers, Wire Trash Bins" />
+  <meta name="description" content="Buezo's Construction offers expert site management and environmental protection services with over 10 years of experience." />
   <meta name="author" content="Buezo's Construction" />
 
   <title>Buezo's Construction</title>
@@ -24,7 +24,7 @@
   <!-- Responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
-  <!-- Font Awesome para íconos personalizados -->
+  <!-- Font Awesome for Custom Icons (only if other icons are still being used) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-dN4g5ZjVYxjK5e4lQ6+g9K5sN4P9jF3Ux1GJ2R2oK1w+wS2RxhC1YjTtJ8fFq+6A4Fp+o+Pvmx5oG3JvUyVkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -32,9 +32,9 @@
   <!-- AOS CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
-  <!-- Estilos Personalizados para Correcciones del Carrusel -->
+  <!-- Custom Styles for Carousel Corrections -->
   <style>
-    /* Estilos Generales */
+    /* General Styles */
     body {
       font-family: "Poppins", sans-serif;
       color: #0c0c0c;
@@ -317,7 +317,7 @@
       display: block;
     }
 
-    /* Flechas de Navegación Actualizadas con Imágenes */
+    /* Navigation Arrows Updated with Images */
     .carousel-control-prev,
     .carousel-control-next {
       position: absolute;
@@ -325,7 +325,7 @@
       transform: translateY(-50%);
       width: 50px;
       height: 50px;
-      background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente negro */
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -337,7 +337,7 @@
 
     .carousel-control-prev:hover,
     .carousel-control-next:hover {
-      background: rgba(0, 0, 0, 0.8); /* Fondo más opaco al pasar el ratón */
+      background: rgba(0, 0, 0, 0.8); /* More opaque background on hover */
     }
 
     .carousel-control-prev-icon,
@@ -347,26 +347,84 @@
       justify-content: center;
       width: 100%;
       height: 100%;
-      background: none; /* Eliminamos cualquier fondo existente */
+      background: none; /* Remove any existing background */
     }
 
     .carousel-control-prev-icon img,
     .carousel-control-next-icon img {
-      width: 20px; /* Ajusta el tamaño según sea necesario */
+      width: 24px; /* Adjust size as needed */
       height: auto;
     }
 
-    /* Posicionar las flechas fuera del contenido */
+    /* Position arrows outside the content */
     .carousel-control-prev {
-      left: -60px; /* Ajusta según sea necesario */
+      left: -60px; /* Adjust as needed */
     }
 
     .carousel-control-next {
-      right: -60px; /* Ajusta según sea necesario */
+      right: -60px; /* Adjust as needed */
     }
 
-    /* Ajustes responsivos para las flechas */
+    /* Responsive adjustments for arrows */
+    @media (max-width: 992px) {
+      /* For tablets and medium devices */
+      .carousel-control-prev {
+        left: -50px;
+      }
+
+      .carousel-control-next {
+        right: -50px;
+      }
+
+      .carousel-control-prev-icon img,
+      .carousel-control-next-icon img {
+        width: 20px;
+      }
+    }
+
     @media (max-width: 768px) {
+      /* For mobile devices */
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 45px;
+        height: 45px;
+      }
+
+      .carousel-control-prev-icon img,
+      .carousel-control-next-icon img {
+        width: 18px;
+      }
+
+      .carousel-control-prev {
+        left: -45px;
+      }
+
+      .carousel-control-next {
+        right: -45px;
+      }
+
+      /* Adjust text and image sizes within the Slider */
+      .slider_section .detail_box h1 {
+        font-size: 3rem;
+      }
+
+      .slider_section .detail_box a {
+        padding: 6px 30px;
+        margin: 25px 0;
+      }
+
+      .slider_section .carousel-indicators {
+        left: 10%;
+        bottom: 15%;
+      }
+
+      .slider_section .carousel-indicators li {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      /* For very small phones */
       .carousel-control-prev,
       .carousel-control-next {
         width: 40px;
@@ -375,25 +433,44 @@
 
       .carousel-control-prev-icon img,
       .carousel-control-next-icon img {
-        width: 16px; /* Tamaño reducido para móviles */
+        width: 16px;
       }
 
       .carousel-control-prev {
-        left: -50px;
+        left: -40px;
       }
 
       .carousel-control-next {
-        right: -50px;
+        right: -40px;
+      }
+
+      /* Further adjust text and image sizes within the Slider */
+      .slider_section .detail_box h1 {
+        font-size: 2.5rem;
+      }
+
+      .slider_section .detail_box a {
+        padding: 5px 25px;
+        margin: 20px 0;
+      }
+
+      .slider_section .carousel-indicators {
+        left: 5%;
+        bottom: 10%;
+      }
+
+      .slider_section .carousel-indicators li {
+        font-size: 16px;
       }
     }
 
-    /* Servicios Section */
+    /* Services Section */
     .services_section {
-      /* Añade estilos específicos si es necesario */
+      /* Add specific styles if needed */
     }
 
     .services_section .heading_container h2 {
-      /* Añade estilos específicos si es necesario */
+      /* Add specific styles if needed */
     }
 
     .services_section .row.service_container {
@@ -411,7 +488,7 @@
       transform: translateY(-10px);
     }
 
-    /* Testimonios Section */
+    /* Testimonials Section */
     .testimonials_section .carousel-indicators li {
       text-indent: 0;
       width: auto;
@@ -557,7 +634,7 @@
       height: 100%;
     }
 
-    /* Información de Contacto Section */
+    /* Contact Information Section */
     .info_section {
       background-color: #363636;
       color: #ffffff;
@@ -721,7 +798,7 @@
       text-decoration: none;
     }
 
-    /* Modales */
+    /* Modals */
     .modal-content img {
       width: 100%;
       border-radius: 5px;
@@ -755,7 +832,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <!-- Logo Eliminado -->
+            <!-- Logo Removed -->
             <span>
               Buezo's Construction
             </span>
@@ -769,24 +846,24 @@
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">Quiénes Somos</a>
+                  <a class="nav-link" href="#about">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#services">Servicios</a>
+                  <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#testimonials">Testimonios</a>
+                  <a class="nav-link" href="#testimonials">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contacto</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
-                <!-- Eliminado el enlace de Login -->
+                <!-- Login link removed -->
               </ul>
             </div>
-            <!-- Eliminado el Carrito de Compras y la Barra de Búsqueda -->
+            <!-- Shopping Cart and Search Bar removed -->
           </div>
         </nav>
       </div>
@@ -796,7 +873,7 @@
     <!-- Slider Section -->
     <section class="slider_section position-relative">
       <div class="design-box">
-        <img src="images/design-1.png" alt="Diseño Decorativo">
+        <img src="images/design-1.png" alt="Decorative Design">
       </div>
       <div class="slider_number-container d-none d-md-block">
         <div class="number-box">
@@ -805,7 +882,7 @@
           </span>
           <hr>
           <span class="service">
-            Servicios
+            Services
           </span>
           <hr>
           <span>
@@ -826,23 +903,23 @@
                 <div class="col-md-6">
                   <div class="detail_box">
                     <h2>
-                      <span> Servicios</span>
+                      <span> Services</span>
                       <hr>
                     </h2>
                     <h1>
-                      Gestión de Sitios
+                      Site Management
                     </h1>
                     <p>
-                      Ofrecemos servicios especializados en la gestión y mantenimiento de sitios de construcción, asegurando el cumplimiento de normativas y la eficiencia en cada proyecto.
+                      We offer specialized services in the management and maintenance of construction sites, ensuring compliance with regulations and efficiency in every project.
                     </p>
                     <div>
-                      <a href="#services" class="btn btn-primary">Conoce Más</a>
+                      <a href="#services" class="btn btn-primary">Learn More</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/1.png" alt="Gestión de Sitios" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/1.png" alt="Site Management" data-aos="zoom-in" data-aos-delay="200">
                   </div>
                 </div>
               </div>
@@ -852,23 +929,23 @@
                 <div class="col-md-6">
                   <div class="detail_box">
                     <h2>
-                      <span> Protección Ambiental</span>
+                      <span> Environmental Protection</span>
                       <hr>
                     </h2>
                     <h1>
-                      Servicios de Protección Ambiental
+                      Environmental Protection Services
                     </h1>
                     <p>
-                      Implementamos soluciones de protección ambiental como Silt Fence, Orange Fence y Sand Bags para minimizar el impacto ambiental de tus proyectos.
+                      We implement environmental protection solutions such as Silt Fence, Orange Fence, and Sand Bags to minimize the environmental impact of your projects.
                     </p>
                     <div>
-                      <a href="#services" class="btn btn-primary">Conoce Más</a>
+                      <a href="#services" class="btn btn-primary">Learn More</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/3.png" alt="Protección Ambiental" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/3.png" alt="Environmental Protection" data-aos="zoom-in" data-aos-delay="200">
                   </div>
                 </div>
               </div>
@@ -878,40 +955,40 @@
                 <div class="col-md-6">
                   <div class="detail_box">
                     <h2>
-                      <span> Mantenimiento</span>
+                      <span> Maintenance</span>
                       <hr>
                     </h2>
                     <h1>
-                      Mantenimiento de Infraestructuras
+                      Infrastructure Maintenance
                     </h1>
                     <p>
-                      Nuestro equipo se encarga del mantenimiento integral de infraestructuras, asegurando su durabilidad y funcionamiento óptimo.
+                      Our team handles comprehensive infrastructure maintenance, ensuring durability and optimal functionality.
                     </p>
                     <div>
-                      <a href="#services" class="btn btn-primary">Conoce Más</a>
+                      <a href="#services" class="btn btn-primary">Learn More</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/2.png" alt="Mantenimiento de Infraestructuras" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/2.png" alt="Infrastructure Maintenance" data-aos="zoom-in" data-aos-delay="200">
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Flechas de Navegación Actualizadas con Imágenes -->
+          <!-- Navigation Arrows Updated with Images -->
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true">
-              <img src="images/prev.png" alt="Anterior">
+              <img src="images/prev.png" alt="Previous">
             </span>
-            <span class="sr-only">Anterior</span>
+            <span class="sr-only">Previous</span>
           </a>
           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true">
-              <img src="images/next.png" alt="Siguiente">
+              <img src="images/next.png" alt="Next">
             </span>
-            <span class="sr-only">Siguiente</span>
+            <span class="sr-only">Next</span>
           </a>
         </div>
       </div>
@@ -919,120 +996,120 @@
     <!-- End Slider Section -->
   </div>
 
-  <!-- Servicios Section -->
+  <!-- Services Section -->
   <section class="services_section layout_padding" id="services">
     <div class="container">
       <div class="heading_container">
         <h2>
-          Nuestros Servicios
+          Our Services
         </h2>
       </div>
       <div class="row service_container">
-        <!-- Servicio 1 -->
+        <!-- Service 1 -->
         <div class="col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
           <div class="card h-100">
             <img src="images/silt_fence.jpg" class="card-img-top" alt="Silt Fence">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Instalación de Silt Fence</h5>
+              <h5 class="card-title">Silt Fence Installation</h5>
               <p class="card-text">
-                Contención de sedimentos eficaz para mantener los sitios de construcción limpios y cumplir con las normativas ambientales.
+                Effective sediment containment to keep construction sites clean and comply with environmental regulations.
               </p>
-              <a href="#" class="mt-auto btn btn-primary" data-toggle="modal" data-target="#modalSiltFence">Más Información</a>
+              <a href="#" class="mt-auto btn btn-primary" data-toggle="modal" data-target="#modalSiltFence">More Information</a>
             </div>
           </div>
         </div>
-        <!-- Servicio 2 -->
+        <!-- Service 2 -->
         <div class="col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
           <div class="card h-100">
             <img src="images/orange_fence.jpg" class="card-img-top" alt="Orange Fence">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Instalación de Orange Fence</h5>
+              <h5 class="card-title">Orange Fence Installation</h5>
               <p class="card-text">
-                Delimitación segura de áreas de trabajo para proteger a los trabajadores y al público en general.
+                Secure delimitation of work areas to protect workers and the general public.
               </p>
-              <a href="#" class="mt-auto btn btn-primary" data-toggle="modal" data-target="#modalOrangeFence">Más Información</a>
+              <a href="#" class="mt-auto btn btn-primary" data-toggle="modal" data-target="#modalOrangeFence">More Information</a>
             </div>
           </div>
         </div>
-        <!-- Servicio 3 -->
+        <!-- Service 3 -->
         <div class="col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
           <div class="card h-100">
             <img src="images/sand_bags.jpg" class="card-img-top" alt="Sand Bags">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Instalación de Sand Bags</h5>
+              <h5 class="card-title">Sand Bags Installation</h5>
               <p class="card-text">
-                Uso de sacos de arena para la protección y contención de sedimentos en proyectos de construcción.
+                Use of sandbags for protection and sediment containment in construction projects.
               </p>
-              <a href="#" class="mt-auto btn btn-primary" data-toggle="modal" data-target="#modalSandBags">Más Información</a>
+              <a href="#" class="mt-auto btn btn-primary" data-toggle="modal" data-target="#modalSandBags">More Information</a>
             </div>
           </div>
         </div>
-        <!-- Servicio 4 -->
+        <!-- Service 4 -->
         <div class="col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
           <div class="card h-100">
-            <img src="images/street_cleaning.jpg" class="card-img-top" alt="Limpieza de Calles">
+            <img src="images/street_cleaning.jpg" class="card-img-top" alt="Street Cleaning">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Limpieza de Calles</h5>
+              <h5 class="card-title">Street Cleaning</h5>
               <p class="card-text">
-                Servicios de limpieza para mantener un entorno limpio y seguro en las áreas de construcción.
+                Cleaning services to maintain a clean and safe environment in construction areas.
               </p>
-              <a href="#" class="mt-auto btn btn-primary" data-toggle="modal" data-target="#modalStreetCleaning">Más Información</a>
+              <a href="#" class="mt-auto btn btn-primary" data-toggle="modal" data-target="#modalStreetCleaning">More Information</a>
             </div>
           </div>
         </div>
-        <!-- Servicio 5 -->
+        <!-- Service 5 -->
         <div class="col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
           <div class="card h-100">
-            <img src="images/pressure_washing.jpg" class="card-img-top" alt="Lavado a Presión">
+            <img src="images/pressure_washing.jpg" class="card-img-top" alt="Pressure Washing">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Lavado a Presión</h5>
+              <h5 class="card-title">Pressure Washing</h5>
               <p class="card-text">
-                Limpieza eficiente de superficies y estructuras con equipos de alta presión.
+                Efficient cleaning of surfaces and structures using high-pressure equipment.
               </p>
-              <a href="#" class="mt-auto btn btn-primary" data-toggle="modal" data-target="#modalPressureWashing">Más Información</a>
+              <a href="#" class="mt-auto btn btn-primary" data-toggle="modal" data-target="#modalPressureWashing">More Information</a>
             </div>
           </div>
         </div>
-        <!-- Servicio 6 -->
+        <!-- Service 6 -->
         <div class="col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="600">
           <div class="card h-100">
             <img src="images/storm_covers.jpg" class="card-img-top" alt="Storm Covers">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Instalación de Storm Covers</h5>
+              <h5 class="card-title">Storm Covers Installation</h5>
               <p class="card-text">
-                Protección de áreas de construcción contra condiciones climáticas adversas con cubiertas especializadas.
+                Protection of construction areas against adverse weather conditions with specialized covers.
               </p>
-              <a href="#" class="mt-auto btn btn-primary" data-toggle="modal" data-target="#modalStormCovers">Más Información</a>
+              <a href="#" class="mt-auto btn btn-primary" data-toggle="modal" data-target="#modalStormCovers">More Information</a>
             </div>
           </div>
         </div>
-        <!-- Servicio 7 -->
+        <!-- Service 7 -->
         <div class="col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="700">
           <div class="card h-100">
             <img src="images/wire_trash_bins.jpg" class="card-img-top" alt="Wire Trash Bins">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Instalación de Wire Trash Bins</h5>
+              <h5 class="card-title">Wire Trash Bins Installation</h5>
               <p class="card-text">
-                Gestión eficiente de residuos en sitios de construcción mediante contenedores de basura de alambre.
+                Efficient waste management on construction sites using wire trash containers.
               </p>
-              <a href="#" class="mt-auto btn btn-primary" data-toggle="modal" data-target="#modalWireTrashBins">Más Información</a>
+              <a href="#" class="mt-auto btn btn-primary" data-toggle="modal" data-target="#modalWireTrashBins">More Information</a>
             </div>
           </div>
         </div>
       </div>
       <div class="d-flex justify-content-center">
         <a href="#" class="price_btn btn btn-secondary">
-          Ver Todos los Servicios
+          View All Services
         </a>
       </div>
     </div>
   </section>
-  <!-- End Servicios Section -->
+  <!-- End Services Section -->
 
-  <!-- Sobre Nosotros Section -->
+  <!-- About Us Section -->
   <section class="about_section layout_padding2-top layout_padding-bottom" id="about">
     <div class="design-box">
-      <img src="images/design-2.png" alt="Diseño Decorativo">
+      <img src="images/design-2.png" alt="Decorative Design">
     </div>
     <div class="container">
       <div class="row">
@@ -1040,37 +1117,37 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                Quiénes Somos
+                About Us
               </h2>
             </div>
             <p>
-              En Buezo's Construction, contamos con más de 10 años de experiencia ofreciendo servicios expertos en gestión de sitios y protección ambiental. Nos dedicamos a proporcionar soluciones eficientes y sostenibles para proyectos de construcción, asegurando la máxima calidad y cumplimiento de normativas.
+              At Buezo's Construction, we have over 10 years of experience providing expert site management and environmental protection services. We are dedicated to delivering efficient and sustainable solutions for construction projects, ensuring the highest quality and compliance with regulations.
               <br><br>
-              Nuestro compromiso es mantener entornos limpios y seguros, adaptando nuestras técnicas y herramientas a las necesidades únicas de cada proyecto. Con un equipo altamente capacitado y comprometido, nos esforzamos por superar las expectativas de nuestros clientes en cada ocasión.
+              Our commitment is to maintain clean and safe environments, adapting our techniques and tools to the unique needs of each project. With a highly trained and committed team, we strive to exceed our clients' expectations every time.
             </p>
             <div>
               <a href="#services">
-                Conoce Más
+                Learn More
               </a>
             </div>
           </div>
         </div>
         <div class="col-md-6" data-aos="fade-left">
           <div class="img-box">
-            <img src="images/about-img.jpg" alt="Sobre Nosotros">
+            <img src="images/about-img.jpg" alt="About Us">
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- End Sobre Nosotros Section -->
+  <!-- End About Us Section -->
 
-  <!-- Testimonios Section -->
+  <!-- Testimonials Section -->
   <section class="testimonials_section layout_padding" id="testimonials">
     <div class="container">
       <div class="heading_container">
         <h2>
-          Testimonios
+          Testimonials
         </h2>
       </div>
       <div class="carousel slide" id="testimonialCarousel" data-ride="carousel">
@@ -1084,20 +1161,20 @@
             <div class="client_container">
               <div class="client-id">
                 <div class="img-box">
-                  <img src="images/client1.jpg" alt="Cliente 1">
+                  <img src="images/client1.jpg" alt="Client 1">
                 </div>
                 <div class="name">
                   <h5>
                     Juan Pérez
                   </h5>
                   <h6>
-                    Gerente de Proyecto
+                    Project Manager
                   </h6>
                 </div>
               </div>
               <div class="detail-box">
                 <p>
-                  "Buezo's Construction ha sido un socio invaluable en nuestros proyectos de construcción. Su profesionalismo y atención al detalle han garantizado el éxito de cada iniciativa."
+                  "Buezo's Construction has been an invaluable partner in our construction projects. Their professionalism and attention to detail have ensured the success of every initiative."
                 </p>
               </div>
             </div>
@@ -1106,20 +1183,20 @@
             <div class="client_container">
               <div class="client-id">
                 <div class="img-box">
-                  <img src="images/client2.jpg" alt="Cliente 2">
+                  <img src="images/client2.jpg" alt="Client 2">
                 </div>
                 <div class="name">
                   <h5>
                     María González
                   </h5>
                   <h6>
-                    Directora de Operaciones
+                    Operations Director
                   </h6>
                 </div>
               </div>
               <div class="detail-box">
                 <p>
-                  "La eficiencia y compromiso de Buezo's Construction han superado nuestras expectativas. Recomiendo sus servicios a cualquier empresa que busque calidad y fiabilidad."
+                  "The efficiency and commitment of Buezo's Construction have exceeded our expectations. I recommend their services to any company seeking quality and reliability."
                 </p>
               </div>
             </div>
@@ -1128,52 +1205,52 @@
             <div class="client_container">
               <div class="client-id">
                 <div class="img-box">
-                  <img src="images/client3.jpg" alt="Cliente 3">
+                  <img src="images/client3.jpg" alt="Client 3">
                 </div>
                 <div class="name">
                   <h5>
                     Carlos López
                   </h5>
                   <h6>
-                    Supervisor de Campo
+                    Field Supervisor
                   </h6>
                 </div>
               </div>
               <div class="detail-box">
                 <p>
-                  "Trabajar con Buezo's Construction ha sido una experiencia excepcional. Su equipo siempre está dispuesto a resolver cualquier desafío que surja en el terreno."
+                  "Working with Buezo's Construction has been an exceptional experience. Their team is always ready to tackle any challenges that arise on the ground."
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <!-- Flechas de Navegación Actualizadas con Imágenes -->
+        <!-- Navigation Arrows Updated with Images -->
         <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true">
-            <img src="images/prev.png" alt="Anterior">
+            <img src="images/prev.png" alt="Previous">
           </span>
-          <span class="sr-only">Anterior</span>
+          <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true">
-            <img src="images/next.png" alt="Siguiente">
+            <img src="images/next.png" alt="Next">
           </span>
-          <span class="sr-only">Siguiente</span>
+          <span class="sr-only">Next</span>
         </a>
       </div>
     </div>
   </section>
-  <!-- End Testimonios Section -->
+  <!-- End Testimonials Section -->
 
-  <!-- Contacto Section -->
+  <!-- Contact Section -->
   <section class="contact_section layout_padding" id="contact">
     <div class="design-box">
-      <img src="images/design-2.png" alt="Diseño Decorativo">
+      <img src="images/design-2.png" alt="Decorative Design">
     </div>
     <div class="container">
       <div class="heading_container">
         <h2>
-          Contáctanos
+          Contact Us
         </h2>
       </div>
     </div>
@@ -1182,20 +1259,20 @@
         <div class="col-md-6" data-aos="fade-right">
           <form id="contactForm">
             <div>
-              <input type="text" name="name" placeholder="Nombre" required aria-required="true" />
+              <input type="text" name="name" placeholder="Name" required aria-required="true" />
             </div>
             <div>
-              <input type="email" name="email" placeholder="Correo Electrónico" required aria-required="true" />
+              <input type="email" name="email" placeholder="Email" required aria-required="true" />
             </div>
             <div>
-              <input type="tel" name="phone" placeholder="Teléfono" />
+              <input type="tel" name="phone" placeholder="Phone" />
             </div>
             <div>
-              <textarea name="message" placeholder="Mensaje" rows="5" required aria-required="true"></textarea>
+              <textarea name="message" placeholder="Message" rows="5" required aria-required="true"></textarea>
             </div>
             <div class="d-flex ">
               <button type="submit">
-                ENVIAR
+                SEND
               </button>
             </div>
           </form>
@@ -1210,9 +1287,9 @@
       </div>
     </div>
   </section>
-  <!-- End Contacto Section -->
+  <!-- End Contact Section -->
 
-  <!-- Información de Contacto -->
+  <!-- Contact Information -->
   <section class="info_section ">
     <div class="container">
       <div class="info_container">
@@ -1220,7 +1297,7 @@
           <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
             <div class="info_logo">
               <a href="#">
-                <!-- Logo Eliminado -->
+                <!-- Logo Removed -->
                 <span>
                   Buezo's Construction
                 </span>
@@ -1230,9 +1307,9 @@
           <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
             <div class="info_contact">
               <a href="https://goo.gl/maps/XYZ">
-                <img src="images/location.png" alt="Dirección">
+                <img src="images/location.png" alt="Address">
                 <span>
-                  Houston, TX 77094, EE. UU., P.O. Box 940331
+                  Houston, TX 77094, USA, P.O. Box 940331
                 </span>
               </a>
             </div>
@@ -1240,7 +1317,7 @@
           <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
             <div class="info_contact">
               <a href="tel:+17133578311">
-                <img src="images/phone.png" alt="Teléfono">
+                <img src="images/phone.png" alt="Phone">
                 <span>
                   +1-713-357-8311
                 </span>
@@ -1250,7 +1327,7 @@
           <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
             <div class="info_contact">
               <a href="mailto:buezohugol@yahoo.co">
-                <img src="images/mail.png" alt="Correo Electrónico">
+                <img src="images/mail.png" alt="Email">
                 <span>
                   buzohugol@yahoo.co
                 </span>
@@ -1258,11 +1335,11 @@
             </div>
           </div>
         </div>
-        <!-- Eliminada la Sección de Newsletter -->
+        <!-- Newsletter Section Removed -->
         <div class="info_social" data-aos="fade-up" data-aos-delay="500">
           <div class="d-flex justify-content-center">
             <h5 class="info_heading">
-              Síguenos
+              Follow Us
             </h5>
           </div>
           <div class="social_box">
@@ -1283,336 +1360,336 @@
       </div>
     </div>
   </section>
-  <!-- End Información de Contacto -->
+  <!-- End Contact Information -->
 
   <!-- Footer Section -->
   <section class="container-fluid footer_section">
     <p>
-      &copy; <span id="displayYear"></span> Todos los derechos reservados por
+      &copy; <span id="displayYear"></span> All rights reserved by
       <a href="https://buezosconstruction.com/">Buezo's Construction</a>
     </p>
   </section>
   <!-- End Footer Section -->
 
-  <!-- Modales para Servicios Principales -->
+  <!-- Modals for Main Services -->
 
-  <!-- Modal Gestión de Sitios -->
+  <!-- Modal Site Management -->
   <div class="modal fade" id="modalGestionSitios" tabindex="-1" role="dialog" aria-labelledby="modalGestionSitiosLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content" data-aos="fade-up">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalGestionSitiosLabel">Gestión de Sitios</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <h5 class="modal-title" id="modalGestionSitiosLabel">Site Management</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <p>
-            Nuestra Gestión de Sitios se centra en la planificación, organización y supervisión de todos los aspectos relacionados con la construcción. Garantizamos el cumplimiento de las normativas, la eficiencia en el uso de recursos y la seguridad en el sitio de trabajo.
+            Our Site Management focuses on the planning, organization, and supervision of all aspects related to construction. We ensure compliance with regulations, efficient resource use, and site safety.
           </p>
           <div class="row">
             <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-              <img src="images/gestion_sitios_before.jpg" class="img-fluid mb-3" alt="Antes de la Gestión de Sitios">
-              <h6>Antes</h6>
+              <img src="images/gestion_sitios_before.jpg" class="img-fluid mb-3" alt="Before Site Management">
+              <h6>Before</h6>
             </div>
             <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-              <img src="images/gestion_sitios_after.jpg" class="img-fluid mb-3" alt="Después de la Gestión de Sitios">
-              <h6>Después</h6>
+              <img src="images/gestion_sitios_after.jpg" class="img-fluid mb-3" alt="After Site Management">
+              <h6>After</h6>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal Servicios de Protección Ambiental -->
+  <!-- Modal Environmental Protection Services -->
   <div class="modal fade" id="modalProteccionAmbiental" tabindex="-1" role="dialog" aria-labelledby="modalProteccionAmbientalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content" data-aos="fade-up">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalProteccionAmbientalLabel">Servicios de Protección Ambiental</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <h5 class="modal-title" id="modalProteccionAmbientalLabel">Environmental Protection Services</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <p>
-            Implementamos soluciones avanzadas de protección ambiental para minimizar el impacto de tus proyectos de construcción. Nuestros servicios incluyen la instalación de barreras de sedimentación, delimitaciones seguras y gestión de residuos, garantizando un entorno sostenible y cumpliendo con las regulaciones vigentes.
+            We implement advanced environmental protection solutions to minimize the impact of your construction projects. Our services include sediment barriers installation, secure delimitations, and waste management, ensuring a sustainable environment and compliance with current regulations.
           </p>
           <div class="row">
             <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-              <img src="images/proteccion_ambiental_before.jpg" class="img-fluid mb-3" alt="Antes de la Protección Ambiental">
-              <h6>Antes</h6>
+              <img src="images/proteccion_ambiental_before.jpg" class="img-fluid mb-3" alt="Before Environmental Protection">
+              <h6>Before</h6>
             </div>
             <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-              <img src="images/proteccion_ambiental_after.jpg" class="img-fluid mb-3" alt="Después de la Protección Ambiental">
-              <h6>Después</h6>
+              <img src="images/proteccion_ambiental_after.jpg" class="img-fluid mb-3" alt="After Environmental Protection">
+              <h6>After</h6>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal Mantenimiento de Infraestructuras -->
+  <!-- Modal Infrastructure Maintenance -->
   <div class="modal fade" id="modalMantenimientoInfra" tabindex="-1" role="dialog" aria-labelledby="modalMantenimientoInfraLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content" data-aos="fade-up">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalMantenimientoInfraLabel">Mantenimiento de Infraestructuras</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <h5 class="modal-title" id="modalMantenimientoInfraLabel">Infrastructure Maintenance</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <p>
-            Nos encargamos del mantenimiento integral de infraestructuras, asegurando su durabilidad y funcionamiento óptimo. Nuestro equipo utiliza técnicas avanzadas y materiales de alta calidad para prevenir y solucionar problemas, garantizando que tus infraestructuras se mantengan en perfectas condiciones a lo largo del tiempo.
+            We handle comprehensive infrastructure maintenance, ensuring durability and optimal functionality. Our team uses advanced techniques and high-quality materials to prevent and solve issues, guaranteeing that your infrastructures remain in perfect condition over time.
           </p>
           <div class="row">
             <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-              <img src="images/mantenimiento_infra_before.jpg" class="img-fluid mb-3" alt="Antes del Mantenimiento de Infraestructuras">
-              <h6>Antes</h6>
+              <img src="images/mantenimiento_infra_before.jpg" class="img-fluid mb-3" alt="Before Infrastructure Maintenance">
+              <h6>Before</h6>
             </div>
             <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-              <img src="images/mantenimiento_infra_after.jpg" class="img-fluid mb-3" alt="Después del Mantenimiento de Infraestructuras">
-              <h6>Después</h6>
+              <img src="images/mantenimiento_infra_after.jpg" class="img-fluid mb-3" alt="After Infrastructure Maintenance">
+              <h6>After</h6>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modales para Sub-Servicios Existentes -->
+  <!-- Modals for Existing Sub-Services -->
 
-  <!-- Modal Servicio 1: Instalación de Silt Fence -->
+  <!-- Modal Service 1: Silt Fence Installation -->
   <div class="modal fade" id="modalSiltFence" tabindex="-1" role="dialog" aria-labelledby="modalSiltFenceLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content" data-aos="fade-up">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalSiltFenceLabel">Instalación de Silt Fence</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <h5 class="modal-title" id="modalSiltFenceLabel">Silt Fence Installation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <p>
-            Contención de sedimentos eficaz para mantener los sitios de construcción limpios y cumplir con las normativas ambientales.
+            Effective sediment containment to keep construction sites clean and comply with environmental regulations.
           </p>
           <div class="row">
             <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-              <img src="images/silt_fence_before.jpg" class="img-fluid mb-3" alt="Antes de la Instalación de Silt Fence">
-              <h6>Antes</h6>
+              <img src="images/silt_fence_before.jpg" class="img-fluid mb-3" alt="Before Silt Fence Installation">
+              <h6>Before</h6>
             </div>
             <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-              <img src="images/silt_fence_after.jpg" class="img-fluid mb-3" alt="Después de la Instalación de Silt Fence">
-              <h6>Después</h6>
+              <img src="images/silt_fence_after.jpg" class="img-fluid mb-3" alt="After Silt Fence Installation">
+              <h6>After</h6>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal Servicio 2: Instalación de Orange Fence -->
+  <!-- Modal Service 2: Orange Fence Installation -->
   <div class="modal fade" id="modalOrangeFence" tabindex="-1" role="dialog" aria-labelledby="modalOrangeFenceLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content" data-aos="fade-up">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalOrangeFenceLabel">Instalación de Orange Fence</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <h5 class="modal-title" id="modalOrangeFenceLabel">Orange Fence Installation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <p>
-            Delimitación segura de áreas de trabajo para proteger a los trabajadores y al público en general.
+            Secure delimitation of work areas to protect workers and the general public.
           </p>
           <div class="row">
             <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-              <img src="images/orange_fence_before.jpg" class="img-fluid mb-3" alt="Antes de la Instalación de Orange Fence">
-              <h6>Antes</h6>
+              <img src="images/orange_fence_before.jpg" class="img-fluid mb-3" alt="Before Orange Fence Installation">
+              <h6>Before</h6>
             </div>
             <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-              <img src="images/orange_fence_after.jpg" class="img-fluid mb-3" alt="Después de la Instalación de Orange Fence">
-              <h6>Después</h6>
+              <img src="images/orange_fence_after.jpg" class="img-fluid mb-3" alt="After Orange Fence Installation">
+              <h6>After</h6>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal Servicio 3: Instalación de Sand Bags -->
+  <!-- Modal Service 3: Sand Bags Installation -->
   <div class="modal fade" id="modalSandBags" tabindex="-1" role="dialog" aria-labelledby="modalSandBagsLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content" data-aos="fade-up">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalSandBagsLabel">Instalación de Sand Bags</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <h5 class="modal-title" id="modalSandBagsLabel">Sand Bags Installation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <p>
-            Uso de sacos de arena para la protección y contención de sedimentos en proyectos de construcción.
+            Use of sandbags for protection and sediment containment in construction projects.
           </p>
           <div class="row">
             <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-              <img src="images/sand_bags_before.jpg" class="img-fluid mb-3" alt="Antes de la Instalación de Sand Bags">
-              <h6>Antes</h6>
+              <img src="images/sand_bags_before.jpg" class="img-fluid mb-3" alt="Before Sand Bags Installation">
+              <h6>Before</h6>
             </div>
             <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-              <img src="images/sand_bags_after.jpg" class="img-fluid mb-3" alt="Después de la Instalación de Sand Bags">
-              <h6>Después</h6>
+              <img src="images/sand_bags_after.jpg" class="img-fluid mb-3" alt="After Sand Bags Installation">
+              <h6>After</h6>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal Servicio 4: Limpieza de Calles -->
+  <!-- Modal Service 4: Street Cleaning -->
   <div class="modal fade" id="modalStreetCleaning" tabindex="-1" role="dialog" aria-labelledby="modalStreetCleaningLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content" data-aos="fade-up">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalStreetCleaningLabel">Limpieza de Calles</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <h5 class="modal-title" id="modalStreetCleaningLabel">Street Cleaning</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <p>
-            Servicios de limpieza para mantener un entorno limpio y seguro en las áreas de construcción.
+            Cleaning services to maintain a clean and safe environment in construction areas.
           </p>
           <div class="row">
             <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-              <img src="images/street_cleaning_before.jpg" class="img-fluid mb-3" alt="Antes de la Limpieza de Calles">
-              <h6>Antes</h6>
+              <img src="images/street_cleaning_before.jpg" class="img-fluid mb-3" alt="Before Street Cleaning">
+              <h6>Before</h6>
             </div>
             <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-              <img src="images/street_cleaning_after.jpg" class="img-fluid mb-3" alt="Después de la Limpieza de Calles">
-              <h6>Después</h6>
+              <img src="images/street_cleaning_after.jpg" class="img-fluid mb-3" alt="After Street Cleaning">
+              <h6>After</h6>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal Servicio 5: Lavado a Presión -->
+  <!-- Modal Service 5: Pressure Washing -->
   <div class="modal fade" id="modalPressureWashing" tabindex="-1" role="dialog" aria-labelledby="modalPressureWashingLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content" data-aos="fade-up">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalPressureWashingLabel">Lavado a Presión</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <h5 class="modal-title" id="modalPressureWashingLabel">Pressure Washing</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <p>
-            Limpieza eficiente de superficies y estructuras con equipos de alta presión.
+            Efficient cleaning of surfaces and structures using high-pressure equipment.
           </p>
           <div class="row">
             <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-              <img src="images/pressure_washing_before.jpg" class="img-fluid mb-3" alt="Antes del Lavado a Presión">
-              <h6>Antes</h6>
+              <img src="images/pressure_washing_before.jpg" class="img-fluid mb-3" alt="Before Pressure Washing">
+              <h6>Before</h6>
             </div>
             <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-              <img src="images/pressure_washing_after.jpg" class="img-fluid mb-3" alt="Después del Lavado a Presión">
-              <h6>Después</h6>
+              <img src="images/pressure_washing_after.jpg" class="img-fluid mb-3" alt="After Pressure Washing">
+              <h6>After</h6>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal Servicio 6: Instalación de Storm Covers -->
+  <!-- Modal Service 6: Storm Covers Installation -->
   <div class="modal fade" id="modalStormCovers" tabindex="-1" role="dialog" aria-labelledby="modalStormCoversLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content" data-aos="fade-up">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalStormCoversLabel">Instalación de Storm Covers</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <h5 class="modal-title" id="modalStormCoversLabel">Storm Covers Installation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <p>
-            Protección de áreas de construcción contra condiciones climáticas adversas con cubiertas especializadas.
+            Protection of construction areas against adverse weather conditions with specialized covers.
           </p>
           <div class="row">
             <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-              <img src="images/storm_covers_before.jpg" class="img-fluid mb-3" alt="Antes de la Instalación de Storm Covers">
-              <h6>Antes</h6>
+              <img src="images/storm_covers_before.jpg" class="img-fluid mb-3" alt="Before Storm Covers Installation">
+              <h6>Before</h6>
             </div>
             <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-              <img src="images/storm_covers_after.jpg" class="img-fluid mb-3" alt="Después de la Instalación de Storm Covers">
-              <h6>Después</h6>
+              <img src="images/storm_covers_after.jpg" class="img-fluid mb-3" alt="After Storm Covers Installation">
+              <h6>After</h6>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Modal Servicio 7: Instalación de Wire Trash Bins -->
+  <!-- Modal Service 7: Wire Trash Bins Installation -->
   <div class="modal fade" id="modalWireTrashBins" tabindex="-1" role="dialog" aria-labelledby="modalWireTrashBinsLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content" data-aos="fade-up">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalWireTrashBinsLabel">Instalación de Wire Trash Bins</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <h5 class="modal-title" id="modalWireTrashBinsLabel">Wire Trash Bins Installation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <p>
-            Gestión eficiente de residuos en sitios de construcción mediante contenedores de basura de alambre.
+            Efficient waste management on construction sites using wire trash containers.
           </p>
           <div class="row">
             <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-              <img src="images/wire_trash_bins_before.jpg" class="img-fluid mb-3" alt="Antes de la Instalación de Wire Trash Bins">
-              <h6>Antes</h6>
+              <img src="images/wire_trash_bins_before.jpg" class="img-fluid mb-3" alt="Before Wire Trash Bins Installation">
+              <h6>Before</h6>
             </div>
             <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-              <img src="images/wire_trash_bins_after.jpg" class="img-fluid mb-3" alt="Después de la Instalación de Wire Trash Bins">
-              <h6>Después</h6>
+              <img src="images/wire_trash_bins_after.jpg" class="img-fluid mb-3" alt="After Wire Trash Bins Installation">
+              <h6>After</h6>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -1620,7 +1697,7 @@
 
   <!-- Scripts -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/popper.min.js"></script> <!-- Asegúrate de incluir Popper.js -->
+  <script type="text/javascript" src="js/popper.min.js"></script> <!-- Ensure Popper.js is included -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
 
@@ -1628,13 +1705,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init({
-      duration: 800, // Duración de la animación en milisegundos
-      once: true,    // Si true, la animación solo se ejecuta una vez
-      mirror: false, // Si true, las animaciones se ejecutan al desplazarse hacia arriba también
+      duration: 800, // Animation duration in milliseconds
+      once: true,    // If true, animation occurs only once
+      mirror: false, // If true, animations occur when scrolling up as well
     });
   </script>
 
-  <!-- JavaScript para Actualizar el Año en el Footer -->
+  <!-- JavaScript to Update Year in Footer -->
   <script>
     document.getElementById("displayYear").textContent = new Date().getFullYear();
   </script>
